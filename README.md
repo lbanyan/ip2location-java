@@ -1,10 +1,11 @@
 IP2Location Java Package
 ======================
 
-This Java package provides a fast lookup of country, region, city, latitude, longitude, ZIP code, time zone, ISP, domain name, connection type, IDD code, area code, weather station code, station name, mcc, mnc, mobile brand, elevation, and usage type from IP address by using IP2Location database. This package uses a file based database available at IP2Location.com. This database simply contains IP blocks as keys, and other information such as country, region, city, latitude, longitude, ZIP code, time zone, ISP, domain name, connection type, IDD code, area code, weather station code, station name, mcc, mnc, mobile brand, elevation, and usage type as values. It supports both IP address in IPv4 and IPv6.
+This Java package provides a fast lookup of country, region, city, latitude, longitude, ZIP code, time zone, ISP, domain name, connection type, IDD code, area code, weather station code, station name, mcc, mnc, mobile brand, elevation, and usage type from IP address by using IP2Location database. This package uses a file based database available at IP2Location.com. This database simply contains IP blocks as keys, and other information such as country, region, city, latitude, longitude, ZIP code, time zone, ISP, domain name, connection type, IDD code, area code, weather station code, station name, mcc, mnc, mobile brand, elevation, and usage type as values. It supports both IP address in **IPv4** and **IPv6**.
 
 Maven Dependency
 ======================
+
 ```
 <dependency>
     <groupId>com.google.guava</groupId>
@@ -12,6 +13,7 @@ Maven Dependency
     <version>28.2-jre</version>
 </dependency>
 ```
+
 Example
 =======
 
@@ -29,8 +31,8 @@ public class Application {
             System.out.println(result.country_name);
             System.out.println(result.city);
             System.out.println(result.isp);
-
-			result = ip2Location.query("2001:4860:4860::8888");
+            
+            result = ip2Location.query("2001:4860:4860::8888");
 
             System.out.println(result.country_code);
             System.out.println(result.country_name);
